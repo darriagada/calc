@@ -1,6 +1,6 @@
-  let debito = 1.29;
-            let credito = 1.44;
-            let prepago = 1.59;
+            let debito = 1.29;
+            let credito = 1.59;
+            let prepago = 1.44;
             let mpos = 2.30;
 
             let debitoIVA = 1.54;

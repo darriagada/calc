@@ -13,6 +13,11 @@
             let showPrepago = document.getElementById("data-prepago");
             let showMPOS = document.getElementById("data-mpos");
 
+            let comisionDebito = document.getElementById("comision-debito");
+            let comisionCredito = document.getElementById("comision-credito");
+            let comisionPrepago = document.getElementById("comision-prepago");
+            let comisionMPOS = document.getElementById("comision-mpos");
+
             let outputDebito = document.getElementById("debito");
             let outputCredito = document.getElementById("credito");
             let outputPrepago = document.getElementById("prepago");
@@ -22,6 +27,8 @@
             showCredito.innerText = credito + '%';
             showPrepago.innerText = prepago + '%';
             showMPOS.innerText = mpos + '%';
+
+            comisionDebito.innerText = '$0';
 
             let valor = document.getElementById("cost");
             valor.value = '10.000';
@@ -78,6 +85,10 @@
                 showCredito.innerText = creditoIVA + '%';
                 showPrepago.innerText = prepagoIVA + '%';
                 showMPOS.innerText = mposIVA + '%';
+                comisionDebito.innerText = valorDebitoIva.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionCredito.innerText = valorCreditoIva.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionPrepago.innerText = valorPrepagoIva.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionMPOS.innerText = valorMPOSIva.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
             } else {
                 outputDebito.innerText = totalDebito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
                 outputCredito.innerText = totalCredito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
@@ -87,6 +98,10 @@
                 showCredito.innerText = credito + '%';
                 showPrepago.innerText = prepago + '%';
                 showMPOS.innerText = mpos + '%';
+                comisionDebito.innerText = valorDebito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionCredito.innerText = valorCredito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionPrepago.innerText = valorPrepago.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
+                comisionMPOS.innerText = valorMPOS.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'});
             }
 
         }
@@ -106,6 +121,10 @@
             outputCredito.innerText = '$0';
             outputPrepago.innerText = '$0';
             outputMPOS.innerText = '$0';
+            comisionDebito.innerText = '$0';
+            comisionCredito.innerText = '$0';
+            comisionPrepago.innerText = '$0';
+            comisionMPOS.innerText = '$0';
         }
 
         document.getElementsByClassName('clear')[0].addEventListener('click', function() {

@@ -125,6 +125,15 @@ a {
             font-size: 12px;
         }
 
+
+        #comision-debito,
+        #comision-credito,
+        #comision-prepago,
+        #comision-mpos {
+          color: #FF9100;
+          background-color: #FFF6EE;
+        }
+
         .flex-form {
             display: flex;
             align-items: center;

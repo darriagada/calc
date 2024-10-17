@@ -1,0 +1,220 @@
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight: 400; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+        body {
+            padding: 2em;
+            font-size: 100%;
+            color: #666;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1 {
+            font-size: 6rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color:#111;
+        }
+
+        .resultados > * {
+            padding: 1pc 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        #cost {
+            padding: 15px 45px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-radius: 400px;
+            border: 2px solid #eee;
+            position: relative;
+            width: 80%;
+        }
+
+        button {
+            padding:20px;
+            border: none;
+            color: #fff;
+            border-radius: 6px;
+            background-color: #111;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #111;
+        }
+
+        button:hover,
+        button:focus {
+            color: #fff;
+            background-color: #333;
+            border-color: #333;
+        }
+
+        span i {
+            color: #00C0B9;
+            background-color: #e7fbf3;
+            padding: 3px 7px;
+            border-radius: 400px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .flex-form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4px;
+        }
+
+        .p-relative {
+            position: relative;
+        }
+
+        .c-6 {
+            width: 100%;
+        }
+
+        .c-6 label {
+            position: absolute;
+            z-index: 1;
+            margin: 18px 25px;
+            font-size: 1.5rem;
+        }
+
+        .end-flex {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            width: 20%;
+        }
+
+        .end-flex .switch {
+            margin-left: 10px;
+        }
+
+        .clear {
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            margin: 20px -45px;
+            border-radius: 400px;
+            padding: .6pc;
+            color: #111;
+            border: 2px solid #111;
+            background: none;
+        }
+
+        header {
+            padding: 2pc 0;
+        }
+
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00C0B9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00C0B9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

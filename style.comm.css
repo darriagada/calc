@@ -72,6 +72,10 @@ a {
             border-bottom: 1px solid #eaeaea;
         }
 
+        .resultados > div:last-child {
+          border-bottom: none;
+        }
+
         h2 {
           padding: 2pc 0 .3pc;
           font-weight: 700;

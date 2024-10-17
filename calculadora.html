@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora Comisiones</title>
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="style.comm.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="Calculadora de comisiones para Compraquí">
+    <meta name="author" content="@notdarriagada">
+</head>
+<body>
+<main role="main" id="main">
+    <div class="inner-app">
+        <div class="flex-form">
+            <aside class="c-6">
+                <label for="cost">$</label>
+                <input type="text" value="" id="cost" name="cost" inputmode="decimal" oninput="setFormat('cost');fixOrder();getNum();" />
+                <button type="button" class="clear">&cross;</button> 
+                <!-- <button onclick="fixOrder();" class="boton-calcular">Calcular</button> -->
+            </aside>
+            <aside class="end-flex">
+                <label for="check">Agregar IVA</label>
+                <label class="switch">
+                    <input type="checkbox" name="check" id="check" onclick="fixOrder();" />
+                    <span class="slider round"></span>
+                  </label>
+
+            </aside>
+        </div>
+
+        <section class="resultados">
+            <div>
+                <h1 id="debito">$0</h1>
+                <span>Débito <i id="data-debito"></i></span>
+            </div>
+
+            <div>
+                <h1 id="credito">$0</h1>
+                <span>Crédito <i id="data-credito"></i></span>
+            </div>
+
+            <div>
+                <h1 id="prepago">$0</h1>
+                <span>Prepago <i id="data-prepago"></i></span>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="main.comm.min.js"></script>      
+</body>
+</html>        

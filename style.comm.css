@@ -46,6 +46,11 @@ a {
     text-decoration: none;
 }
 
+::selection {
+  color: #fff;
+  background-color: #111;
+}
+
 
         body {
             padding: 2em;
@@ -62,9 +67,16 @@ a {
             color:#111;
         }
 
-        .resultados > * {
+        .resultados > div {
             padding: 1pc 0;
             border-bottom: 1px solid #eaeaea;
+        }
+
+        h2 {
+          padding: 2pc 0 .3pc;
+          font-weight: 700;
+          color: #111;
+          display: inline-block;
         }
 
         #cost {

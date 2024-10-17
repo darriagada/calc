@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Calculadora Comisiones</title>
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="style.comm.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="style.comm.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -17,8 +17,7 @@
             <aside class="c-6">
                 <label for="cost">$</label>
                 <input type="text" value="" id="cost" name="cost" inputmode="decimal" oninput="setFormat('cost');fixOrder();getNum();" />
-                <button type="button" class="clear">&cross;</button> 
-                <!-- <button onclick="fixOrder();" class="boton-calcular">Calcular</button> -->
+                <button type="button" class="clear">&cross;</button>
             </aside>
             <aside class="end-flex">
                 <label for="check">Agregar IVA</label>
@@ -31,6 +30,9 @@
         </div>
 
         <section class="resultados">
+
+            <h2>Súper Compraquí</h2>
+
             <div>
                 <h1 id="debito">$0</h1>
                 <span>Débito <i id="data-debito"></i></span>
@@ -44,6 +46,13 @@
             <div>
                 <h1 id="prepago">$0</h1>
                 <span>Prepago <i id="data-prepago"></i></span>
+            </div>
+
+            <h2>Máquina Compraquí</h2>
+
+            <div>
+                <h1 id="mpos">$0</h1>
+                <span>Débito, crédito y prepago <i id="data-mpos"></i></span>
             </div>
         </section>
     </div>

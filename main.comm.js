@@ -6,7 +6,7 @@
             let debitoIVA = 1.54;
             let creditoIVA = 1.89;
             let prepagoIVA = 1.71;
-            let mposIVA = 2.74;
+            let mposIVA = 2.737;
 
             let showDebito = document.getElementById("data-debito");
             let showCredito = document.getElementById("data-credito");
